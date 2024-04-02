@@ -79,7 +79,7 @@ const CartClient: React.FC<CartClientProps> = ({ currentUser }) => {
             <span>{formatPrice(cartTotalAmount)}</span>
           </div>
           <p className="text-[#b36f09]">
-            Los impuestos y el envío se calculan al finalizar la compra
+            Los impuestos y el envío están incluidos en el precio del producto
           </p>
           <Button
             label={currentUser ? "Finalizar Compra" : "Iniciar sesión para pagar"}

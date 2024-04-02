@@ -17,10 +17,10 @@ const Footer = () => {
                 </FooterList>
                 <FooterList>
                     <h3 className="mb-3 text-xl font-bold text-[#B36F09]">Atención al cliente</h3>
-                    <Link href="#">Contacto</Link>
-                    <Link href="#">Política de envíos</Link>
-                    <Link href="#">Sobre nosotros</Link>
-                    <Link href="#">FAQ</Link>
+                    <Link href="/contact">Contacto</Link>
+                    <Link href="/politics">Política de envíos</Link>
+                    <Link href="/about">Sobre nosotros</Link>
+                    <Link href="/faq">FAQ</Link>
                 </FooterList>
                 <div className="w-full md:w-1/3 mb-6 md:mb-0">
                     <h3 className=" mb-3 text-xl font-bold text-[#B36F09]">Sobre Nosotros</h3>

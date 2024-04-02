@@ -20,13 +20,13 @@ export const authOptions: AuthOptions = {
           type: "text",
         },
         password: {
-          label: "password",
+          label: "contraseña",
           type: "password",
         },
       },
       async authorize(credentials) {
         if (!credentials?.email || !credentials.password) {
-          throw new Error("Invalid email or password");
+          throw new Error("Correo electrónico o contraseña no válidos");
         }
 
         const user = await prisma.user.findUnique({
@@ -36,7 +36,7 @@ export const authOptions: AuthOptions = {
         });
 
         if (!user || !user?.hashedPassword) {
-          throw new Error("Invalid email or password");
+          throw new Error("Correo electrónico o contraseña no válidos");
         }
 
         const isCorrectPassword = await bcrypt.compare(
@@ -45,7 +45,7 @@ export const authOptions: AuthOptions = {
         );
 
         if (!isCorrectPassword) {
-          throw new Error("Invalid email or password");
+          throw new Error("Correo electrónico o contraseña no válidos");
         }
 
         return user;
