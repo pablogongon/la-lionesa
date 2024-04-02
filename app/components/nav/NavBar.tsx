@@ -38,7 +38,7 @@ const NavBar = async () => {
             <a href="/">
               <img
                 src="/logo.png"
-                alt="Descripción de la imagen"
+                alt="La Lionesa"
                 className={`${redressed.className} font-bold text-2xl text-[#B36F09] max-w-[120px] max-h-[120px]`}
               />
             </a>
