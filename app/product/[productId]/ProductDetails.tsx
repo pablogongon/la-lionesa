@@ -99,7 +99,7 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({ product }) => {
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-      <div className="mt-5 bg-white rounded-lg border-[2px] border-[#323232] transition hover:scale-105">
+      <div className="mt-5 bg-white rounded-lg border-[2px] border-[#323232] transition hover:scale-105" style={{ maxHeight: "500px", overflow: "hidden" }}>
       <ProductImage
         cartProduct={cartProduct}
         product={product}
