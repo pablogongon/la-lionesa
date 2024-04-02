@@ -11,6 +11,11 @@ const poppins = Poppins({ subsets: ["latin"], weight: ["400", "700"] });
 export const metadata: Metadata = {
   title: "La Lionesa",
   description: "Pagina web Oficial La Lionesa profesional components",
+  icons:{
+    icon:["favicon.ico?v=4"],
+    apple:["/apple-touch-icon.png"],
+    shortcut:["/apple-touch-icon.png"]
+  }
 };
 
 export default async function RootLayout({
