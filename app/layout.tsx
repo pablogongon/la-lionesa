@@ -1,3 +1,4 @@
+import React from 'react';
 import "./globals.css";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
@@ -25,6 +26,25 @@ export default async function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        {/* Favicons */}
+        <link rel="icon" href="favicon.ico?v=4" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="/apple-touch-icon.png" />
+        {/* Fin de Favicons */}
+
+        {/* Script del chatbot */}
+        <script dangerouslySetInnerHTML={{
+          __html: `
+            window.embeddedChatbotConfig = {
+              chatbotId: "iI0WBS8d-86ubE3k6pOK4",
+              domain: "www.chatbase.co"
+            };
+          `
+        }} />
+        <script src="https://www.chatbase.co/embed.min.js" defer />
+        {/* Fin del script del chatbot */}
+      </head>
       <body className={`${poppins.className} text-white`}>
         <Toaster
           toastOptions={{
@@ -38,7 +58,6 @@ export default async function RootLayout({
           <div className="flex flex-col min-h-screen bg-[#212121] ">
             <NavBar />
             <main className="flex-grow">{children}</main>
-            
             <Footer />
           </div>
         </CartProvider>
