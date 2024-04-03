@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /admin
+Disallow: /admin/add-products
+Disallow: /admin/manage-products
+Disallow: /admin/admin/manage-orders
+
+
