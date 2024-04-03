@@ -83,7 +83,7 @@ const OrdersClient: React.FC<OrdersClientProps> = ({ orders }) => {
     },
     {
       field: "deliveryStatus",
-      headerName: "Delivery Status",
+      headerName: "Estado de envio",
       width: 130,
       renderCell: (params) => {
         return (
@@ -118,12 +118,12 @@ const OrdersClient: React.FC<OrdersClientProps> = ({ orders }) => {
     },
     {
       field: "date",
-      headerName: "Date",
+      headerName: "Fecha",
       width: 130,
     },
     {
       field: "action",
-      headerName: "Actions",
+      headerName: "Acciones",
       width: 200,
       renderCell: (params) => {
         return (
