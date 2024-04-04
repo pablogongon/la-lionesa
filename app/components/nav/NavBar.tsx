@@ -39,7 +39,7 @@ const NavBar = async () => {
               <img
                 src="/logo.png"
                 alt="La Lionesa"
-                className={`${redressed.className} font-bold text-2xl text-[#B36F09] max-w-[120px] max-h-[120px]`}
+                className={`${redressed.className} font-bold text-2xl text-[#B36F09] max-w-[130px] max-h-[130px]`}
               />
             </a>
             <div className="hidden md:block"><SearchBar/></div>
