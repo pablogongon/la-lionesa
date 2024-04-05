@@ -114,9 +114,7 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({ product }) => {
           <Rating value={productRating} readOnly />
           <div>{product.reviews.length} Valoraciones</div>
         </div>
-        <Horizontal />
-        <div className="text-justify" style={{ whiteSpace: 'pre-line' }}>{product.description}</div>
-        <Horizontal />
+       
         <div>
           <span className="font-semibold">CATEGORIA:</span> {product.category}
         </div>
@@ -163,6 +161,9 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({ product }) => {
                 onClick={() => handleAddProductToCart(cartProduct)}
               />
             </div>
+            <Horizontal />
+            <div className="text-justify" style={{ whiteSpace: 'pre-line' }}>{product.description}</div>
+            <Horizontal />
           </>
         )}
       </div>
