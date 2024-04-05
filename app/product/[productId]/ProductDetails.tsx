@@ -148,7 +148,7 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({ product }) => {
               images={product.images}
               handleColorSelect={handleColorSelect}
             />
-            <Horizontal />
+            
             <SetQuatity
               cartProduct={cartProduct}
               handleQtyIncrease={handleQtyIncrease}
