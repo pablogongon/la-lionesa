@@ -81,6 +81,7 @@ const CheckoutForm: React.FC<CheckoutFormProps> = ({
       <h2 className="font-semibold mt-4 mb-2">Informacion de Pago</h2>
       <PaymentElement id="payment-element" options={{ layout: "tabs" }} />
       <div className="py-4 text-center text-[#B36F09] text-xl font-bold">
+        <p className=" text-sm md:text-sm xl:text-sm text-[#1ed98b] xl:justify-center">🚚 Envio en 24h </p>
         Total: {formattedPrice}
       </div>
       <Button
