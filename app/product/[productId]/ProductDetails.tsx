@@ -124,6 +124,7 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({ product }) => {
         <div className={product.inStock ? "text-teal-400" : "text-rose-400"}>
           {product.inStock ? "En Stock" : "Stock Agotado"}
         </div>
+        <p className=" text-sm md:text-sm xl:text-sm text-[#1ed98b] xl:justify-center">🚚 Envio en 24h </p>
         <Horizontal />
         {isProductInCart ? (
           <>
