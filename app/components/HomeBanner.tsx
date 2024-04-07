@@ -8,7 +8,7 @@ const HomeBanner = () => {
                     <h1 className="text-3xl md:text-5xl xl:text-6xl font-bold text-white mb-2">Productos al mejor precio!</h1>
                     <p className="text-base md:text-lg xl:text-xl text-white mb-2">Disfruta de descuentos en nuestros artículos seleccionados</p>
                     <p className="text-lg md:text-xl xl:text-5xl text-[#321513] xl:justify-center font-bold">50% de descuento </p>
-                    <p className="mt-5 text-lg md:text-xl xl:text-4xl text-[#014a27] xl:justify-center font-semibold">🚚 Envio en 24h </p>
+                    <p className="mt-5 text-lg md:text-xl xl:text-4xl text-[#005927] xl:justify-center font-semibold">🚚 Envio en 24h </p>
                 </div>
                 <div className="w-full md:w-1/3 relative aspect-video mb-4 md:mb-0">
                     <div className="mx-auto w-full md:w-auto relative aspect-video">
